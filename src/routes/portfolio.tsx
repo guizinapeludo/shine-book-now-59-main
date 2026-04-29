@@ -4,9 +4,9 @@ import { PortfolioGrid } from "@/components/PortfolioGrid";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfólio — Aurora Estética" },
+      { title: "Portfólio — Bell Estética" },
       { name: "description", content: "Veja resultados reais de tratamentos estéticos: pele, sobrancelhas, cílios e muito mais." },
-      { property: "og:title", content: "Portfólio — Aurora Estética" },
+      { property: "og:title", content: "Portfólio — Bell Estética" },
       { property: "og:description", content: "Resultados reais dos nossos tratamentos." },
     ],
   }),

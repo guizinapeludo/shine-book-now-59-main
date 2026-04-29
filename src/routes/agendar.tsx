@@ -5,9 +5,9 @@ import { Clock, MapPin, MessageCircle } from "lucide-react";
 export const Route = createFileRoute("/agendar")({
   head: () => ({
     meta: [
-      { title: "Agendar Horário — Aurora Estética" },
+      { title: "Agendar Horário — Bell Estética" },
       { name: "description", content: "Agende seu horário de tratamento estético de forma rápida e fácil pelo WhatsApp." },
-      { property: "og:title", content: "Agendar Horário — Aurora Estética" },
+      { property: "og:title", content: "Agendar Horário — Bell Estética" },
       { property: "og:description", content: "Agende seu horário pelo WhatsApp." },
     ],
   }),

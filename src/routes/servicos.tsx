@@ -4,9 +4,9 @@ import { ServicesSection } from "@/components/ServicesSection";
 export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
-      { title: "Serviços — Aurora Estética" },
+      { title: "Serviços — Bell Estética" },
       { name: "description", content: "Conheça todos os tratamentos estéticos: limpeza de pele, sobrancelhas, cílios, drenagem e mais." },
-      { property: "og:title", content: "Serviços — Aurora Estética" },
+      { property: "og:title", content: "Serviços — Bell Estética" },
       { property: "og:description", content: "Conheça todos os nossos tratamentos estéticos." },
     ],
   }),
