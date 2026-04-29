@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
         <div>
           <h3 className="font-display text-2xl mb-3">
-            <span className="text-gradient-gold">Aurora</span> Estética
+            <span className="text-gradient-gold">Bell</span> Estética
           </h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
             Realçando a sua beleza natural com técnicas exclusivas e cuidado personalizado.
@@ -32,7 +32,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Aurora Estética. Todos os direitos reservados.
+        © {new Date().getFullYear()} Bell Estética. Todos os direitos reservados.
       </div>
     </footer>
   );

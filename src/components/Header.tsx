@@ -27,7 +27,7 @@ export function Header() {
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-5">
         <Link to="/" className="font-display text-2xl tracking-wide">
-          <span className="text-gradient-gold">Aurora</span>
+          <span className="text-gradient-gold">Bell</span>
           <span className="text-foreground"> Estética</span>
         </Link>
 

@@ -32,10 +32,10 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aurora Estética — Beleza & Bem-estar" },
+      { title: "Bell Estética — Beleza & Bem-estar" },
       { name: "description", content: "Tratamentos estéticos exclusivos com cuidado personalizado. Agende seu horário online." },
-      { name: "author", content: "Aurora Estética" },
-      { property: "og:title", content: "Aurora Estética — Beleza & Bem-estar" },
+      { name: "author", content: "Bell Estética" },
+      { property: "og:title", content: "Bell Estética — Beleza & Bem-estar" },
       { property: "og:description", content: "Tratamentos estéticos exclusivos com cuidado personalizado." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
