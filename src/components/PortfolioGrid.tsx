@@ -4,7 +4,7 @@ import lashes from "@/assets/portfolio-lashes.jpeg";
 import skin from "@/assets/portfolio-skin.jpeg";
 import massage from "@/assets/portfolio-massage.jpeg";
 import led from "@/assets/portfolio-led.jpeg";
-import nails from "@/assets/portfolio-nails.jpeg";
+import nails from "@/assets/portfolio-nails.jpg";
 
 export const portfolioItems = [
   { image: skin, title: "Limpeza de pele profunda", category: "Facial" },
