@@ -1,9 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import brows from "@/assets/portfolio-brows.jpg";
-import lashes from "@/assets/portfolio-lashes.jpg";
+import brows from "@/assets/portfolio-brows.jpeg";
+import lashes from "@/assets/portfolio-lashes.jpeg";
 import skin from "@/assets/portfolio-skin.jpg";
 import massage from "@/assets/portfolio-massage.jpg";
-import led from "@/assets/portfolio-led.jpg";
+import led from "@/assets/portofolio-led.jpeg";
 import nails from "@/assets/portfolio-nails.jpg";
 
 export const portfolioItems = [
