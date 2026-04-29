@@ -1,10 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import brows from "@/assets/portfolio-brows.jpeg";
 import lashes from "@/assets/portfolio-lashes.jpeg";
-import skin from "@/assets/portfolio-skin.jpg";
-import massage from "@/assets/portfolio-massage.jpg";
+import skin from "@/assets/portfolio-skin.jpeg";
+import massage from "@/assets/portfolio-massage.jpeg";
 import led from "@/assets/portofolio-led.jpeg";
-import nails from "@/assets/portfolio-nails.jpg";
+import nails from "@/assets/portfolio-nails.jpeg";
 
 export const portfolioItems = [
   { image: skin, title: "Limpeza de pele profunda", category: "Facial" },
