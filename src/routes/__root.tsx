@@ -54,6 +54,24 @@ export const Route = createRootRoute({
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
+  if (typeof window === "undefined") {
+    // #region agent log
+    fetch("http://127.0.0.1:7631/ingest/f247117c-22bf-4cc8-a300-57fd1cebba0a", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "25fe09" },
+      body: JSON.stringify({
+        sessionId: "25fe09",
+        runId: "pre-fix",
+        hypothesisId: "H1",
+        location: "src/routes/__root.tsx:58",
+        message: "SSR root shell rendered",
+        data: { env: "server" },
+        timestamp: Date.now(),
+      }),
+    }).catch(() => {});
+    // #endregion
+  }
+
   return (
     <html lang="en">
       <head>
@@ -72,9 +90,9 @@ function RootComponent() {
     // #region agent log
     fetch("http://127.0.0.1:7631/ingest/f247117c-22bf-4cc8-a300-57fd1cebba0a", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "49918d" },
+      headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "25fe09" },
       body: JSON.stringify({
-        sessionId: "49918d",
+        sessionId: "25fe09",
         runId: "pre-fix",
         hypothesisId: "H2",
         location: "src/routes/__root.tsx:71",
@@ -90,9 +108,9 @@ function RootComponent() {
     // #region agent log
     fetch("http://127.0.0.1:7631/ingest/f247117c-22bf-4cc8-a300-57fd1cebba0a", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "49918d" },
+      headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "25fe09" },
       body: JSON.stringify({
-        sessionId: "49918d",
+        sessionId: "25fe09",
         runId: "pre-fix",
         hypothesisId: "H3",
         location: "src/routes/__root.tsx:87",
@@ -109,9 +127,9 @@ function RootComponent() {
     // #region agent log
     fetch("http://127.0.0.1:7631/ingest/f247117c-22bf-4cc8-a300-57fd1cebba0a", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "49918d" },
+      headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "25fe09" },
       body: JSON.stringify({
-        sessionId: "49918d",
+        sessionId: "25fe09",
         runId: "pre-fix",
         hypothesisId: "H4",
         location: "src/routes/__root.tsx:104",
