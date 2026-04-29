@@ -3,7 +3,7 @@ import brows from "@/assets/portfolio-brows.jpeg";
 import lashes from "@/assets/portfolio-lashes.jpeg";
 import skin from "@/assets/portfolio-skin.jpeg";
 import massage from "@/assets/portfolio-massage.jpeg";
-import led from "@/assets/portofolio-led.jpeg";
+import led from "@/assets/portfolio-led.jpeg";
 import nails from "@/assets/portfolio-nails.jpeg";
 
 export const portfolioItems = [
