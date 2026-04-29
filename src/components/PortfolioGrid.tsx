@@ -1,18 +1,29 @@
 import { Link } from "@tanstack/react-router";
-import brows from "@/assets/portfolio-brows.jpeg";
-import lashes from "@/assets/portfolio-lashes.jpeg";
-import skin from "@/assets/portfolio-skin.jpeg";
-import massage from "@/assets/portfolio-massage.jpeg";
-import led from "@/assets/portfolio-led.jpeg";
-import nails from "@/assets/portfolio-nails.jpg";
+
+const portfolioImageModules = import.meta.glob("@/assets/portfolio-*.{jpg,jpeg}", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+function getPortfolioImage(name: string) {
+  const jpgKey = Object.keys(portfolioImageModules).find((key) => key.endsWith(`/portfolio-${name}.jpg`));
+  if (jpgKey) return portfolioImageModules[jpgKey];
+
+  const jpegKey = Object.keys(portfolioImageModules).find((key) =>
+    key.endsWith(`/portfolio-${name}.jpeg`),
+  );
+  if (jpegKey) return portfolioImageModules[jpegKey];
+
+  return "";
+}
 
 export const portfolioItems = [
-  { image: skin, title: "Limpeza de pele profunda", category: "Facial" },
-  { image: brows, title: "Design de sobrancelhas", category: "Sobrancelhas" },
-  { image: lashes, title: "Extensão de cílios volume", category: "Cílios" },
-  { image: massage, title: "Drenagem linfática", category: "Corporal" },
-  { image: led, title: "Terapia LED facial", category: "Anti-idade" },
-  { image: nails, title: "Manicure & spa das mãos", category: "Mãos" },
+  { image: getPortfolioImage("skin"), title: "Limpeza de pele profunda", category: "Facial" },
+  { image: getPortfolioImage("brows"), title: "Design de sobrancelhas", category: "Sobrancelhas" },
+  { image: getPortfolioImage("lashes"), title: "Extensão de cílios volume", category: "Cílios" },
+  { image: getPortfolioImage("massage"), title: "Drenagem linfática", category: "Corporal" },
+  { image: getPortfolioImage("led"), title: "Terapia LED facial", category: "Anti-idade" },
+  { image: getPortfolioImage("nails"), title: "Manicure & spa das mãos", category: "Mãos" },
 ];
 
 export function PortfolioGrid({ title = "Portfólio", limit }: { title?: string; limit?: number }) {
