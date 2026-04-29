@@ -2,10 +2,5 @@
   "framework": null,
   "installCommand": "npm install",
   "buildCommand": "npm run build",
-  "functions": {
-    "api/index.ts": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }]
 }
